@@ -1,0 +1,87 @@
+
+Saat mode berubah, robot akan:
+- berhenti sebentar
+- menampilkan LED status
+- kemudian melanjutkan gerakan
+
+---
+
+## 🦿 Pola Gerakan (Gait)
+
+Robot menggunakan **diagonal walking gait**:
+
+1. Depan kiri + belakang kanan bergerak
+2. Depan kanan + belakang kiri bergerak
+3. Ulang terus
+
+Ini membuat robot lebih stabil saat berjalan.
+
+---
+
+## 🔌 Pin Configuration
+
+### Servo Motor
+| Kaki | Pin |
+|------|-----|
+| Depan Kiri | 8 |
+| Belakang Kiri | 9 |
+| Depan Kanan | 10 |
+| Belakang Kanan | 11 |
+
+### HC-SR04
+| Komponen | Pin |
+|----------|-----|
+| TRIG | 2 |
+| ECHO | 3 |
+
+### LED Indicator
+| Warna | Pin |
+|------|-----|
+| Merah | 5 |
+| Kuning | 6 |
+| Hijau | 7 |
+
+---
+
+## ⚠️ Power Requirement
+
+- Gunakan **power eksternal untuk servo (minimal 5V 3A)**
+- Jangan hanya mengandalkan power dari Arduino
+- Hindari reset akibat drop tegangan
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- Arduino Uno / Nano
+- Servo Motor (4 unit)
+- HC-SR04 Ultrasonic Sensor
+- LED Indicator System
+- C/C++ (Arduino IDE)
+
+---
+
+## 🎯 Tujuan Project
+
+- Belajar dasar robotika 4 kaki
+- Implementasi sensor jarak real-time
+- Pengembangan gait walking robot
+- Sistem kontrol berbasis state machine sederhana
+
+---
+
+## 📷 Catatan
+
+Project ini dibuat untuk pembelajaran dan eksperimen robotika dan IoT.
+
+---
+
+## 👨‍💻 Author
+
+**Rendy Almaheri Adhi Pratama**
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
