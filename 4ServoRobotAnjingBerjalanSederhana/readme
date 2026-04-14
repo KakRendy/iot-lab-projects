@@ -1,3 +1,33 @@
+# 🤖 Quadruped Robot - Arduino (HC-SR04 + Servo + LED)
+
+Robot 4 kaki berbasis Arduino yang menggunakan servo motor dan sensor ultrasonik HC-SR04 untuk mendeteksi jarak dan berjalan secara otomatis dengan beberapa mode gerakan.
+
+---
+
+## 🚀 Fitur Utama
+
+- 🦿 Robot 4 kaki (quadruped walking robot)
+- 📡 Sensor jarak HC-SR04
+- ⚙️ Dua mode gerakan otomatis:
+  - 🚶 JALAN LAMBAT (5–10 cm)
+  - 🏃 JALAN NORMAL (>10 cm)
+- 🛑 STOP otomatis jika jarak terlalu dekat (< 5 cm)
+- 💡 LED indikator status:
+  - 🟢 Hijau = jalan normal
+  - 🟡 Kuning = jalan lambat
+  - 🔴 Merah = stop (blink)
+- 🔒 Lock mode untuk mencegah perubahan status terlalu cepat
+- 🔁 Step walking gait (diagonal movement)
+- ⚡ Startup indicator LED hijau
+
+---
+
+## 🧠 Cara Kerja Sistem
+
+Robot akan membaca jarak di depan menggunakan sensor HC-SR04, lalu menentukan mode gerakan:
+< 5 cm → STOP (berhenti + LED merah blink)
+5–10 cm → JALAN LAMBAT (LED kuning)
+10 cm → JALAN NORMAL (LED hijau)
 
 Saat mode berubah, robot akan:
 - berhenti sebentar
